@@ -2,6 +2,7 @@ import { data } from "./data"
 import "./App.css"
 import React, { Component } from "react"
 import ProductList from "./ProductList"
+import About from "./about"
 
 class App extends Component {
   state = {
@@ -31,6 +32,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <About />
         <ProductList
           products={this.state.productcopy}
           handleBtn={this.handleBtn}
